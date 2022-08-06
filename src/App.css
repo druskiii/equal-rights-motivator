@@ -93,6 +93,7 @@ body {
   color: white;
   font-size: 19px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 #new-quote:hover {
@@ -105,11 +106,11 @@ body {
 #tweet-quote {
   color: black;
   padding: 10px 10px 10px 10px;
-  margin-left: 30px;
   border: solid 3px black;
   font-size: 20px;
   transition: .5s;
   border-radius: 10px;
+  display: inline-block;
 }
 
 #tweet-quote:hover {
@@ -131,19 +132,19 @@ a:hover {
     color: #cfd91c;
   } 
 
-  .row {
-    display: flex;
-  }
+.row {
+  display: flex;
+}
 
 .column {
   padding-top: 25px;
+  text-align: center;
 }
 
 #twitter {
-  flex: 25%;
-  padding-top: 15px;
+  flex: 50%;
 }
 
 #quote-button {
-  flex: 75%;
+  flex: 50%;
 }
