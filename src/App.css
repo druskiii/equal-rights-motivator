@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    #bf9191,
+    #e0e5a8,
+    #55c9bc,
+    #c98d55,
+    #97a3db,
+    #ba29b5,
+    #679191,
+    #cfcef0,
+    #87a38f,
+    #5e4e4b,
+    #bfd91a
+  );
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#text {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 50px 50px 50px 50px;
+  border: solid 5px black;
+  border-radius: 1px;
+  text-align: right;
+  box-shadow: 20px 20px;
+  margin-bottom: 50px; 
+  border-radius: 10px;
+}
+
+#author {
+  color: black;
+  font-size: 25px;
+}
+
+#new-quote {
+  background: linear-gradient(
+    45deg,
+    #bf9191,
+    #e0e5a8,
+    #55c9bc,
+    #c98d55,
+    #97a3db,
+    #ba29b5,
+    #679191,
+    #cfcef0,
+    #87a38f,
+    #5e4e4b,
+    #bfd91a
+  );
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
+  padding: 10px 10px 10px 10px;
+  margin-left: 30px;
+  border: solid 3px black;
   color: white;
+  font-size: 19px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#new-quote:hover {
+  color: black;
+  background: #f0fff0;
+  box-shadow: 2px 3px;
+  transition: .5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#tweet-quote {
+  color: black;
+  padding: 10px 10px 10px 10px;
+  margin-left: 30px;
+  border: solid 3px black;
+  font-size: 20px;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+#tweet-quote:hover {
+  color: #1e90ff;
+  box-shadow: 3px 3px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  margin-top: -2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
   }
-  to {
-    transform: rotate(360deg);
+a:hover {
+    color: #cfd91c;
+  } 
+
+  .row {
+    display: flex;
   }
+
+.column {
+  padding-top: 25px;
+}
+
+#twitter {
+  flex: 25%;
+  padding-top: 15px;
+}
+
+#quote-button {
+  flex: 75%;
 }
