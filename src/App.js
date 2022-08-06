@@ -120,8 +120,10 @@ render(){
     <div id="quote-box">
     <div id="text"><i class="fa fa-quote-left"></i>   {this.state.currentQuote}  <i class="fa fa-quote-right"></i><p><br></br></p>
       <div id="author">- {this.state.currentAuthor}
-        <a id="tweet-quote" href="https://twitter.com/intent/tweet"><i class="fa fa-twitter fa-lg"></i></a>
-        <button id="new-quote" onClick={this.statelyQuote}><i class="fa fa-paper-plane"></i> One More Quote!</button> 
+        <div className="row">
+          <div className="column" id="twitter"><a id="tweet-quote" href="https://twitter.com/intent/tweet"><i class="fa fa-twitter fa-lg"></i></a></div>
+          <div className="column" id="qoute-button"><button id="new-quote" onClick={this.statelyQuote}><i class="fa fa-paper-plane"></i> One More Quote!</button></div> 
+      </div>
       </div>
     </div>
   </div> 
@@ -132,7 +134,5 @@ render(){
   );
 }
 }
-
-//ReactDOM.render(<App />, document.getElementById("app"));
 
 export default App;
