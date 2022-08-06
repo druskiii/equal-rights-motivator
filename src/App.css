@@ -56,6 +56,7 @@ body {
   background-color: white;
   color: black;
   font-size: 25px;
+  font-weight: 450;
   padding: 50px 50px 50px 50px;
   border: solid 5px black;
   border-radius: 1px;
@@ -87,7 +88,7 @@ body {
   );
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
-  padding: 10px 10px 10px 10px;
+  padding: 12px 12px 12px 12px;
   margin-left: 30px;
   border: solid 3px black;
   color: white;
@@ -105,7 +106,7 @@ body {
 
 #tweet-quote {
   color: black;
-  padding: 10px 10px 10px 10px;
+  padding: 12px 12px 12px 12px;
   border: solid 3px black;
   font-size: 20px;
   transition: .5s;
@@ -142,9 +143,9 @@ a:hover {
 }
 
 #twitter {
-  flex: 50%;
+  flex: 25%;
 }
 
 #quote-button {
-  flex: 50%;
+  flex: 75%;
 }
