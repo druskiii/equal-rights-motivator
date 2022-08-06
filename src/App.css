@@ -92,7 +92,7 @@ body {
   margin-left: 30px;
   border: solid 3px black;
   color: white;
-  font-size: 19px;
+  font: 550 19px Arial;
   border-radius: 10px;
   display: inline-block;
 }
@@ -123,14 +123,15 @@ body {
   text-align: center;
   color: white;
   margin-top: -2rem;
+  font: 550 20px Arial;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #032431;
   }
 a:hover {
-    color: #cfd91c;
+    color: black;
   } 
 
 .row {
